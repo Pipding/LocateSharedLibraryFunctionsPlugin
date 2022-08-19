@@ -9,6 +9,9 @@
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.pipding.locatesharedlibraryfunctionsplugin.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.pipding.locatesharedlibraryfunctionsplugin.services.MyProjectService"/>
+        <gotoDeclarationHandler implementation="com.github.pipding.locatesharedlibraryfunctionsplugin.SharedLibraryFunctionGoToDeclarationHandler"/>
+        <documentationProvider implementation="com.github.pipding.locatesharedlibraryfunctionsplugin.SharedLibraryFunctionDocumentationProvider"/>
+<!--        <lang.syntaxHighlighterFactory language="Java" implementationClass="com.github.pipding.locatesharedlibraryfunctionsplugin.SharedLibraryFunctionSyntaxHighlighterFactory"></lang.syntaxHighlighterFactory>-->
     </extensions>
 
     <applicationListeners>
